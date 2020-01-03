@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Menu from "./menu"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -34,6 +35,8 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
+      <Menu />
+
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
